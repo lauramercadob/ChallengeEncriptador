@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Encriptador</title>
+    <title>Encriptador ONE-Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <p class="titulo"><img src="imagenes/Logo.png" class="logo">Encriptador de texto</p>
+    </header>
+
+    <main>
+        <section class="seccion-encriptar">
+            <textarea class="msj-encriptar" id="textoEncriptar" cols="40" rows="12" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="advertencia"><img src="imagenes/bi_exclamation-circle-fill.png"> Usa sólo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion-desencriptar">
+            <div class="texto-no-encontrado" id="sin-mensaje">
+                <img src="imagenes/Muñeco.png" id="imagen-muneco">
+                <h4>Ningún mensaje fue encontrado</h4>
+                <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
+            </div>
+            <textarea class="msj-encriptado" id="mensajeEncriptar" cols="30" rows="12"> </textarea>
+            <div class="copiar">
+                <button class="btn-copiar" id="btncopiar" onclick="copy()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="pie">&copy Desarrollado por Laura A. Mercado Bustamante | 2024</p>
+    </footer>
+   
+    <script src="script.js"></script>
     
 </body>
 </html>
