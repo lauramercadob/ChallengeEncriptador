@@ -19,6 +19,8 @@ function encriptar(){
 
   document.getElementById("sin-mensaje").style.display = "none";
   document.getElementById("mensajeEncriptar").innerHTML = txtcifrado;
+  document.getElementById("mensajeEncriptar").style.display = "show";
+  document.getElementById("mensajeEncriptar").style.display = "inherit";
   document.getElementById("btncopiar").style.display = "show";
   document.getElementById("btncopiar").style.display = "inherit";
 
@@ -37,6 +39,8 @@ function desencriptar(){
 
   document.getElementById("sin-mensaje").style.display = "none";
   document.getElementById("mensajeEncriptar").innerHTML = txtcifrado;
+  document.getElementById("mensajeEncriptar").style.display = "show";
+  document.getElementById("mensajeEncriptar").style.display = "inherit";
   document.getElementById("btncopiar").style.display = "show";
   document.getElementById("btncopiar").style.display = "inherit";
 }

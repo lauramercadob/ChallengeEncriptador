@@ -44,22 +44,28 @@ main{
 }
 
 .btn-encriptar{
-    padding: 24px;
+    padding: 20px;
     width: 30%;
     height: 60%;
     border-radius: 14px;
     margin-left: 15%;
+    border: none;
+    cursor: pointer;
     background: #0A3871;
     color: white;
+    font-size: larger;
 }
 
 .btn-desencriptar{
-    padding: 24px;
+    padding: 20px;
     width: 30%;
     height: 60%;
     border-radius: 14px;
     margin-left: 15%;
-    background: #D8DFE8;
+    border: none;
+    cursor: pointer;
+    background: #a5c2e8;
+    font-size: larger;
 }
 
 .msj-encriptado{
@@ -70,16 +76,21 @@ main{
     color: #0d1c59;
     border: none;
     outline: none;
+    display: none;
 }
 
+
 .btn-copiar{
-    padding: 24px;
+    padding: 20px;
     width: 40%;
     height: 10%;
     border-radius: 14px;
     margin-left: 33%;
     margin-top: 50px;
-    background: #D8DFE8;
+    border: none;
+    cursor: pointer;
+    background: #a5c2e8;
+    font-size: larger;
     display: none;
 }
 
@@ -100,12 +111,20 @@ h5{
     padding: 10px;
 }
 
-.pie{
+
+footer{
     text-align: center;
+    margin: 0 auto;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: small;
+}
+
+.redes{
+    margin: 8px 8px 0 0;
+    cursor: pointer;
+    width: 25px;
 }
 
 @media screen and (max-width:480px){
