@@ -45,10 +45,10 @@ main{
 
 .btn-encriptar{
     padding: 20px;
-    width: 30%;
+    width: 25%;
     height: 60%;
     border-radius: 14px;
-    margin-left: 15%;
+    margin-left: 5%;
     border: none;
     cursor: pointer;
     background: #0A3871;
@@ -58,10 +58,22 @@ main{
 
 .btn-desencriptar{
     padding: 20px;
-    width: 30%;
+    width: 25%;
     height: 60%;
     border-radius: 14px;
-    margin-left: 15%;
+    margin-left: 5%;
+    border: none;
+    cursor: pointer;
+    background: #a5c2e8;
+    font-size: larger;
+}
+
+.btn-reiniciar{
+    padding: 20px;
+    width: 25%;
+    height: 60%;
+    border-radius: 14px;
+    margin-left: 5%;
     border: none;
     cursor: pointer;
     background: #a5c2e8;
