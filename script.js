@@ -1,4 +1,4 @@
-let ingresadoArea = document.querySelector(".msj-encriptar")//area de texto ingresado
+let ingresadoArea = document.querySelector(".msj-encriptar");//area de texto ingresado
 let cambiarCopiar = document.querySelector(".btn-copiar"); //boton Copiar
 
 function checarMinusculas(cadena){
@@ -12,7 +12,7 @@ function checarMinusculas(cadena){
         for (let i=0; i<(cadena.length); i++){
             chCode = cadena.charCodeAt(i);
             if (((chCode < 97) || (chCode > 122)) && (chCode != 164) && (chCode != 32) && (chCode != 10)){
-                alert("Debes escribir solo con minusculas y sin acentos");
+                alert("Debes escribir solo con minúsculas, sin acentos, ni caracteres especiales");
                 resultado = false;
                 break;
             }
@@ -23,7 +23,7 @@ function checarMinusculas(cadena){
             cadenaVacia = cadenaVacia + " ";
         }
         if (cadena == cadenaVacia){
-            alert("Debes escribir algún texto");
+            alert("Debes ingresar algún texto");
             resultado = false;
         }
         
@@ -44,13 +44,14 @@ function encriptar(){
         var txtcifrado = txtcifrado.replace(/i/igm,"imes");
         var txtcifrado = txtcifrado.replace(/a/igm,"ai");
         var txtcifrado = txtcifrado.replace(/u/igm,"ufat");
-    
-        document.getElementById("sin-mensaje").style.display = "none";
-        document.getElementById("mensajeEncriptado").innerHTML = txtcifrado;
-        document.getElementById("mensajeEncriptado").style.display = "show";
-        document.getElementById("mensajeEncriptado").style.display = "inherit";
-        document.getElementById("btncopiar").style.display = "show";
-        document.getElementById("btncopiar").style.display = "inherit";}
+
+        
+        document.querySelector(".texto-no-encontrado").style.display = "none";
+        document.querySelector(".msj-encriptado").innerHTML = txtcifrado;
+        document.querySelector(".msj-encriptado").style.display = "show";
+        document.querySelector(".msj-encriptado").style.display = "inherit";
+        document.querySelector(".btn-copiar").style.display = "show";
+        document.querySelector(".btn-copiar").style.display = "inherit";}
         cambiarCopiar.innerHTML = "Copiar";
   
   }
@@ -65,17 +66,17 @@ function encriptar(){
         var txtcifrado = txtcifrado.replace(/ober/igm,"o");
         var txtcifrado = txtcifrado.replace(/enter/igm,"e");
   
-    document.getElementById("sin-mensaje").style.display = "none";
-    document.getElementById("mensajeEncriptado").innerHTML = txtcifrado;
-    document.getElementById("mensajeEncriptado").style.display = "show";
-    document.getElementById("mensajeEncriptado").style.display = "inherit";
-    document.getElementById("btncopiar").style.display = "show";
-    document.getElementById("btncopiar").style.display = "inherit";}
-    cambiarCopiar.innerHTML = "Copiar";
+        document.querySelector(".texto-no-encontrado").style.display = "none";
+        document.querySelector(".msj-encriptado").innerHTML = txtcifrado;
+        document.querySelector(".msj-encriptado").style.display = "show";
+        document.querySelector(".msj-encriptado").style.display = "inherit";
+        document.querySelector(".btn-copiar").style.display = "show";
+        document.querySelector(".btn-copiar").style.display = "inherit";}
+        cambiarCopiar.innerHTML = "Copiar";
   }
   
   function copiar(){
-    var contenido = document.querySelector("#mensajeEncriptado");
+    var contenido = document.querySelector(".msj-encriptado");
     contenido.select();
     document.execCommand("copy");
     cambiarCopiar.innerHTML = "Texto copiado";

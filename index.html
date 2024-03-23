@@ -13,12 +13,14 @@
 
 <body>
     <header>
+        <div class="caja">
         <p class="titulo"><img src="imagenes/Logo.png" class="logo">Encriptador de texto</p>
+    </div>
     </header>
 
     <main>
         <section class="seccion-encriptar">
-            <textarea class="msj-encriptar" id="textoEncriptar" cols="40" rows="12" required placeholder="Ingrese el texto aquí"></textarea>
+            <textarea class="msj-encriptar" cols="40" rows="12" required placeholder="Ingrese el texto aquí"></textarea>
             <p class="advertencia"><img src="imagenes/bi_exclamation-circle-fill.png"> Usa sólo letras minúsculas y sin acentos</p>
             <div class="botones">
                 <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
@@ -28,14 +30,14 @@
         </section>
 
         <section class="seccion-desencriptar">
-            <div class="texto-no-encontrado" id="sin-mensaje">
+            <div class="texto-no-encontrado">
                 <img src="imagenes/Muneco.png" id="imagen-muneco">
                 <h4>Ningún mensaje fue encontrado</h4>
                 <h5>Ingresa el texto que desees encriptar o desencriptar.</h5>
             </div>
-            <textarea class="msj-encriptado" id="mensajeEncriptado" cols="30" rows="12"> </textarea>
+            <textarea class="msj-encriptado" cols="30" rows="12"> </textarea>
             <div class="copiar">
-                <button class="btn-copiar" id="btncopiar" onclick="copiar()">Copiar</button>
+                <button class="btn-copiar" onclick="copiar()">Copiar</button>
             </div>
 
         </section>

@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+.caja{
+    width: 940px;
+    position: relative;
+}
+
 header{
     display: flex;
     font-family: "Lato", sans-serif;
@@ -56,19 +61,7 @@ main{
     font-size: larger;
 }
 
-.btn-desencriptar{
-    padding: 20px;
-    width: 25%;
-    height: 60%;
-    border-radius: 14px;
-    margin-left: 5%;
-    border: none;
-    cursor: pointer;
-    background: #a5c2e8;
-    font-size: larger;
-}
-
-.btn-reiniciar{
+.btn-desencriptar, .btn-reiniciar{
     padding: 20px;
     width: 25%;
     height: 60%;
@@ -140,8 +133,47 @@ footer{
 }
 
 @media screen and (max-width:480px){
-    .main{
+
+    .caja, .botones{
         width: auto;
+        
     }
     
+    .logo{
+        padding-top: 30px;
+        width: 80px;
+    }
+
+    main{
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+
+
+    header{
+        display: flex;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    
+
+    .btn-desencriptar, .btn-reiniciar, .btn-encriptar{
+        padding: 18px;
+        width: 42%;
+        height: 60%;
+        border-radius: 14px;
+        text-align: center;
+        margin: 5px 5px 5px 0;
+   
+       
+    }
+
+    .texto-no-encontrado, .msj-encriptado{
+        margin-top: 30px;
+    }
 }
